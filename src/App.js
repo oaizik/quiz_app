@@ -7,7 +7,7 @@ import QuizResults from './quizPages/QuizResults';
 
 const useStyles = makeStyles(theme => ({
     container: {
-        backgroundColor: 'pink',
+        backgroundColor: '#eca1a6',
         minHeight: '750px',
         display: 'flex',
         flexDirection: 'column',
@@ -25,8 +25,7 @@ const useStyles = makeStyles(theme => ({
         margin: '0px auto',
         paddingTop: '20px',
         display: 'flex',
-        justifyContent: 'center',
-        backgroundColor: 'pink'
+        justifyContent: 'center'
     },
     title: {
         textAlign: 'center',
