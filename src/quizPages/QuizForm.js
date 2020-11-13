@@ -17,18 +17,20 @@ const useStyles = makeStyles(theme => ({
         marginTop: '10px'
     },
     questions: {
-        width: '1000px',
+        width: '95%',
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-around'
     },
     question: {
-        marginTop: '40px',
+        marginTop: '20px',
         width: '300px',
-        height: '110px'
+        height: '120px',
+        backgroundColor: '#bdcebe',
+        padding: '10px'
     },
     question_title: {
-        fontSize: '20px',
+        fontSize: '18px',
         color: 'black',
         height: '30px'
     },
@@ -91,7 +93,7 @@ export default function QuizForm({setQuizpage}) {
     return (
         <div className={classes.quiz}>
             <Typography className={classes.title}>
-                Good Luck, its a bit trickey questions
+                Good Luck, we have a bit trickey questions
             </Typography>    
             <div className={classes.questions}>
                 {questionData &&
