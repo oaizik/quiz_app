@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        backgroundColor: 'white'
+        backgroundColor: '#d6cbd3'
     },
     title: {
         textAlign: 'center',
@@ -17,13 +17,13 @@ const useStyles = makeStyles(theme => ({
         marginTop: '10px'
     },
     questions: {
-        width: '800px',
+        width: '1000px',
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-around'
     },
     question: {
-        marginTop: '20px',
+        marginTop: '40px',
         width: '300px',
         height: '110px'
     },
@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
         width: '250px',
         height: '50px',
         margin: '20px auto',
-        backgroundColor: 'pink',
+        backgroundColor: 'black',
         color: 'white'
     }
 }));
