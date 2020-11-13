@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        backgroundColor: 'white'
+        backgroundColor: '#d6cbd3'
     },
     title: {
         textAlign: 'center',
@@ -19,7 +19,8 @@ const useStyles = makeStyles(theme => ({
         fontSize: '16px'
     },
     results: {
-        margin: '30px auto'
+        margin: '30px auto',
+        height: '450px'
     },
     scoresHistory: {
         margin: '20px auto',
@@ -32,7 +33,7 @@ const useStyles = makeStyles(theme => ({
         width: '250px',
         height: '50px',
         margin: '20px auto',
-        backgroundColor: 'pink',
+        backgroundColor: 'black',
         color: 'white'
     }
 }));
@@ -65,7 +66,7 @@ export default function QuizResults({setQuizpage}) {
             </Typography>   
             <div className={classes.results}>
                 <Typography className={classes.sub_title}>
-                    {scoresHistory.length > 0 && 'Your score history:'} 
+                    {scoresHistory && scoresHistory.length > 0 && 'Your score history:'} 
                 </Typography> 
                 <div className={classes.scoresHistory}>
                     {scoresHistory && scoresHistory.map((q, i) => (
