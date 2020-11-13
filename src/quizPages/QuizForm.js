@@ -71,8 +71,8 @@ export default function QuizForm({setQuizpage}) {
         return correct_answers;
     }
 
-    const submitClicked = async() => {
-        let correct_answers = await checkAnswers().toString();
+    const submitClicked = () => {
+        let correct_answers = checkAnswers().toString();
         let history_length = localStorage.getItem('scores') ? localStorage.getItem('scores').length : 0;
         if (history_length) {
             let score_history = JSON.parse(localStorage["scores"]);
